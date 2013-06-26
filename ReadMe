@@ -1,0 +1,12 @@
+How to use the code : 
+
+1) First fit the MC 
+cmsRun fitMuonIDTightPog.py mc_test
+
+2) Collect the parameters of the fit in MC 
+root -l prepDataFiles.C
+(A file *.info should have been created)
+
+3) Finally fit the data
+cmsRun fitMuonIDTightPog.py data_test
+
